@@ -14,7 +14,7 @@ console.log(frutas)
 
 
 
-var veiculos = ['Polo', 'Virtus', 'T-Cross', 'Nivus', 'Jetta']
+var veiculos = ['Polo', 'Virtus', 'T-Cross', 'Nivus', 'Jetta', 'Fox']
 
 console.log('--- Veiculos ---')
 
