@@ -17,12 +17,13 @@
 // for(i=0;i<10;i++)
 // console.log(vetor[i])
 // console.log('posição' + i)
-
+//
 var opcao = 'S';
 i = 0;
 do
+
 {
-    console.log('enquanto opção = s não sai daqui');
+    console.log('Enquanto opção = s não sai daqui');
     if(i >=10)
         opcao ='n';
     i++;
