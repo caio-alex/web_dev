@@ -31,6 +31,6 @@ console.log(torcedor.rebaixamentos)
 
 torcedor.copabr = 1
 
-console.log(torcedor.copabr)
+// console.log(torcedor.copabr)
 
-delete torcedor.rebaixamentos
+// delete torcedor.rebaixamentos
