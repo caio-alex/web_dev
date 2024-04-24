@@ -6,6 +6,6 @@ function contar(){
 }
 
 function zerar(){
-    contador =0;
+    contador = 0;
     res.innerHTML = null;
 }
