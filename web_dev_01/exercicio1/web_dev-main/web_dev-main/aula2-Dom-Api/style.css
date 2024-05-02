@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Noto+Sans+JP:wght@100..900&display=swap');
+*{
+    background-color: purple;
+}
+body{
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+    color: yellow;
+}
+
+button{
+    background-color:blueviolet;
+}
+  
