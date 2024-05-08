@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.botao{
+    padding: 20px;
+}
