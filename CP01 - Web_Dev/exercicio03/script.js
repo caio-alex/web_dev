@@ -17,7 +17,7 @@ function obterFaixaIMC(imc) {
 function calcula_pessoas(){
     let pessoas = []
 
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 2; i++){
     let nome = prompt("Nome: "+ (i + 1))
     let peso = parseFloat(prompt("Peso(Kg): "+nome))
     let altura = parseFloat(prompt("Altura(m): "+nome))

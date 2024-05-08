@@ -1,18 +1,16 @@
-const comprarFruta = fruta => {
+function comprarFruta()
+{
+    fruta = prompt("Escolha um fruta")
     switch (fruta) {
         case 'maçã':
-            return 'Não vendemos esta fruta aqui.'
+            console.log ('Não vendemos esta fruta aqui.')
         case 'banana':
-            return 'Estamos com escassez de banana.'
+            console.log ('Estamos com escassez de banana.')
         
         case 'melancia':
-            return 'Aqui está, são 3 reais o quilo.'
+           console.log('Aqui está, são 3 reais o quilo.')
        
         default:
-            return 'Erro! Insira uma das opções: "maçã", "kiwi" ou "melancia".'
+            console.log('Erro! Insira uma das opções: "maçã", "banana" ou "melancia".')
     }
 }
-
-console.log(comprarFruta('maçã'))
-console.log(comprarFruta('banana'))
-console.log(comprarFruta('melancia'))
