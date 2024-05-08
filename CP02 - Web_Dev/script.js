@@ -20,30 +20,30 @@ function calculadora(){
     let op = prompt(`${n1} e ${n2} \n + - * /`)
 
     let saida = document.getElementById('saida')
-    let funcao = document.getElementById('funcaoultilizada')
+    let funcao = document.getElementById('funcaoutilizada')
 
     saida.innerHTML = null
     funcao.innerHTML = null
 
     switch(op){
         case '+':
-            let n3 = adicao(n1, n2)
-            saida.innerHTML += `<p>${n1} + ${n2} = ${n3}</p>`
-            funcao.innerHTML += `Funcao adicao(n1, n2) com return n1+n2`
+          
+            saida.innerHTML += `<p>${n1} + ${n2} = ${soma(n1, n2)}</p>`
+            funcao.innerHTML += `<p>Funcao adicao(n1, n2) com return n1+n2</p>`
             break
         case '-':
             
-            saida.innerHTML += `<p>${n1} + ${n2} = ${subtracao(n1, n2)}</p>`
+            saida.innerHTML += `<p>${n1} - ${n2} = ${subtracao(n1, n2)}</p>`
             funcao.innerHTML += `Funcao subtracao(n1, n2) com return n1-n2`
             break
         case '*':
             
-            saida.innerHTML += `<p>${n1} + ${n2} = ${mult(n1, n2)}</p>`
+            saida.innerHTML += `<p>${n1} X ${n2} = ${mult(n1, n2)}</p>`
             funcao.innerHTML += `Funcao multplicacao(n1, n2) com return n1*n2`
             break
         case '/':
             
-            saida.innerHTML += `<p>${n1} + ${n2} = ${divisao(n1, n2)}</p>`
+            saida.innerHTML += `<p>${n1} / ${n2} = ${divisao(n1, n2)}</p>`
             funcao.innerHTML += `Funcao divisao(n1, n2) com return n1/n2`
             break
     }
