@@ -15,36 +15,44 @@ function divisao(n1, n2){
 }
 
 function calculadora(){
-    let n1 = Number(prompt('primeiro valor'))
-    let n2 = Number(prompt('segundo valor'))
-    let op = prompt(`${n1} e ${n2} \n + - * /`)
+    let continuar = true;
 
-    let saida = document.getElementById('saida')
-    let funcao = document.getElementById('funcaoutilizada')
+  while (continuar) {
+    let n1 = Number(prompt('Primeiro valor:'));
+    let n2 = Number(prompt('Segundo valor:'));
+    let op = prompt(`${n1} e ${n2} \n + - * /:`);
 
-    saida.innerHTML = null
-    funcao.innerHTML = null
+    let saida = document.getElementById('saida');
+    let funcao = document.getElementById('funcaoutilizada');
+    document.getElementById('historico').appendChild(itemLista);
+    
+    let itemLista = document.createElement('li');
+    itemLista.textContent = `${n1} ${op} ${n2} = ${resultado}`;
 
-    switch(op){
-        case '+':
-          
-            saida.innerHTML += `<p>${n1} + ${n2} = ${soma(n1, n2)}</p>`
-            funcao.innerHTML += `<p>Funcao adicao(n1, n2) com return n1+n2</p>`
-            break
-        case '-':
-            
-            saida.innerHTML += `<p>${n1} - ${n2} = ${subtracao(n1, n2)}</p>`
-            funcao.innerHTML += `Funcao subtracao(n1, n2) com return n1-n2`
-            break
-        case '*':
-            
-            saida.innerHTML += `<p>${n1} X ${n2} = ${mult(n1, n2)}</p>`
-            funcao.innerHTML += `Funcao multplicacao(n1, n2) com return n1*n2`
-            break
-        case '/':
-            
-            saida.innerHTML += `<p>${n1} / ${n2} = ${divisao(n1, n2)}</p>`
-            funcao.innerHTML += `Funcao divisao(n1, n2) com return n1/n2`
-            break
+    saida.innerHTML = null;
+    funcao.innerHTML = null;
+
+    switch (op) {
+      case '+':
+        saida.innerHTML += `<p>${n1} ${op} ${n2} = ${soma(n1, n2)}</p>`;
+        funcao.innerHTML += `<p>Função adição(n1, n2) com return n1+n2</p>`;
+        break;
+      case '-':
+        saida.innerHTML += `<p>${n1} ${op} ${n2} = ${subtracao(n1, n2)}</p>`;
+        funcao.innerHTML += `Função subtração(n1, n2) com return n1-n2`;
+        break;
+      case '*':
+        saida.innerHTML += `<p>${n1} ${op} ${n2} = ${mult(n1, n2)}</p>`;
+        funcao.innerHTML += `Função multiplicação(n1, n2) com return n1*n2`;
+        break;
+      case '/':
+        saida.innerHTML += `<li>${n1} ${op} ${n2} = ${resultado}</li>`;
+        funcao.innerHTML += `Função divisão(n1, n2) com return n1/n2`;
+        break;
+      default:
+        saida.innerHTML += '<p>Operador inválido!</p>';
     }
+
+    continuar = confirm("Deseja realizar outro cálculo?");
+  }
 }
