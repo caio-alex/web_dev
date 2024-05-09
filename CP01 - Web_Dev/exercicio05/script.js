@@ -1,5 +1,6 @@
-var tipo = comprarCarro => {
-    switch(comprarCarro) {
+function comprarCarro() {
+    let tipo = prompt("Qual é o tipo de carro?: ")
+    switch(tipo) {
         case 'hatch':
             console.log("Compra efetuada com sucesso");
             break;
@@ -12,8 +13,3 @@ var tipo = comprarCarro => {
             console.log("Não trabalhamos com este tipo de automóvel aqui");
     }
 }
-
-// Testando com algumas opções
-console.log(tipo('hatch')); // Compra efetuada com sucesso
-console.log(tipo('sedan')); // Tem certeza de que não prefere um modelo hatch?
-console.log(tipo('bicicleta'));
