@@ -41,7 +41,7 @@ function calcula_funcionarios(){
 
         alert(`Salário Bruto: R$ ${salario_bruto.toFixed(2)}
 Imposto de Renda: R$ ${ir.toFixed(2)}
-axa Fundo de Garantia do Tempo de Serviço: R$ ${fgts.toFixed(2)}
+Taxa Fundo de Garantia do Tempo de Serviço: R$ ${fgts.toFixed(2)}
 Taxa Seguro Social: R$ ${inss.toFixed(2)}
 Salário Líquido: R$ ${salario_liquido.toFixed(2)}`);
         continuar=confirm("Deseja calcular novo salário?")
