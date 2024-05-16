@@ -21,7 +21,7 @@ function calculadora() {
   let continuar = true;
 
   while (continuar) {
-      let operacao = prompt("Selecione a operação:\n1. Soma\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Sair");
+      let operacao = prompt("Selecione a operação:\n1. Soma\n2. Subtração\n3. Multiplicação\n4. Divisão");
 
       if (!['1', '2', '3', '4'].includes(operacao)) {
           alert("Opção inválida!");
